@@ -2,6 +2,14 @@
 
 This repo contains the Dockerfile to create a custom docker-packaged shellspec executable.
 
+## Building the container
+To build the container locally you have to run
+```
+make build
+```
+
+
+## Using the image
 The container expects to find the specs in `/src/spec`. So if your current working directory contains a folder `spec/`, you can mount this folder in the container at `/src`:
 ```
 docker run -it --rm -v ${PWD}:/src swisstopo/shellspec:latest
