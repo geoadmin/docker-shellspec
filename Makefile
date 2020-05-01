@@ -6,8 +6,6 @@ help:
 	@echo
 	@echo "Possible targets:"
 	@echo "- build              Build the container"
-	@echo "- register           Register the container at dockerhub (credentials necessary)"
-	@echo "- cleanall           Remove the virtualenv"
 	@echo ""
 
 .PHONY: build
